@@ -118,7 +118,7 @@ type
   procedure AOReadLinksFromBuffer(Objects:TAOObjects;Buf:TFileBuffer);
   procedure AOWriteObjects(Objects:TAOObjects;Buf:TFileBuffer);
   procedure AOReadObjects(out Objects:TAOObjects;Buf:TFileBuffer);
-  procedure AOClearObjects(Objects:TAOOBjects);
+  procedure AOClearObjects(var Objects:TAOOBjects);
   procedure AOClearDrawn(Objects:TAOOBjects);
   function AOGetParent(Objects:TAOOBjects;Child:TAOAbstract):TAOBaseObject;
   procedure AOToggleParentLink(Objects:TAOOBjects;Child:TAOAbstract);
@@ -260,12 +260,13 @@ begin
   AOReadLinksFromBuffer(Objects,Buf);
 end;
 
-procedure AOClearObjects(Objects:TAOOBjects);
+procedure AOClearObjects(var Objects:TAOOBjects);
 
 var f:Integer;
 
 begin
   for f:=0 to High(Objects) do Objects[f].Free;
+  Objects:=nil;
 end;
 
 { TAOBaseObject }

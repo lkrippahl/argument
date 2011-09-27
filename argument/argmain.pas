@@ -536,6 +536,11 @@ begin
                 AOLineColor:=clWhite;
                 AODefaultBorder:=clWhite;
                 end;
+    'X':begin
+        AOClearObjects(FObjects);
+        RefreshTextsLb;
+        PaintObjects;
+        end;
     end;
   PaintObjects;
   end;
