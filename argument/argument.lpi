@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedproject\"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="argument.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="argument"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="74" Y="17"/>
+        <UsageCount Value="46"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="argmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="argmain"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="65" Y="5"/>
+        <UsageCount Value="46"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="argobjects.pas"/>
+        <UnitName Value="argobjects"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="11" Y="11"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\GPUnits\FileBuffer.pas"/>
+        <UnitName Value="FileBuffer"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="14"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="argument.lrs"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="5199"/>
+        <CursorPos X="1" Y="5221"/>
+        <UsageCount Value="22"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\usr\lib\lazarus\lcl\lresources.pp"/>
+        <UnitName Value="LResources"/>
+        <TopLine Value="1350"/>
+        <CursorPos X="1" Y="1364"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\Personal\htmlfix\htmlfixmain.pas"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="htmlfixmain"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="127"/>
+        <UsageCount Value="11"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\GPUnits\MiscUtils.pas"/>
+        <UnitName Value="MiscUtils"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="284"/>
+        <CursorPos X="13" Y="298"/>
+        <UsageCount Value="19"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\GPUnits\MiscTypes.pas"/>
+        <UnitName Value="MiscTypes"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="182"/>
+        <CursorPos X="19" Y="204"/>
+        <UsageCount Value="19"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\sharedunits\general\filebuffer.pas"/>
+        <UnitName Value="filebuffer"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="37" Y="10"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\sharedunits\general\basetypes.pas"/>
+        <UnitName Value="basetypes"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="MiscTypes.pas"/>
+        <UnitName Value="MiscTypes"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="10"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\sharedunits\utils\stringutils.pas"/>
+        <UnitName Value="stringutils"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="338"/>
+        <CursorPos X="41" Y="365"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\sharedunits\utils\miscutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="miscutils"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="21"/>
+        <CursorPos X="18" Y="91"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit13>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="..\sharedunits\general\filebuffer.pas"/>
+        <Caret Line="424" Column="17" TopLine="409"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\sharedunits\general\filebuffer.pas"/>
+        <Caret Line="8" Column="27" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="7" Column="63" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="521" Column="16" TopLine="495"/>
+      </Position4>
+      <Position5>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="385" Column="15" TopLine="370"/>
+      </Position5>
+      <Position6>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="645" Column="49" TopLine="622"/>
+      </Position6>
+      <Position7>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="8" Column="12" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="59" Column="28" TopLine="45"/>
+      </Position8>
+      <Position9>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="70" Column="13" TopLine="56"/>
+      </Position9>
+      <Position10>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="85" Column="29" TopLine="71"/>
+      </Position10>
+      <Position11>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="199" Column="8" TopLine="185"/>
+      </Position11>
+      <Position12>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="257" Column="6" TopLine="243"/>
+      </Position12>
+      <Position13>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="284" Column="39" TopLine="270"/>
+      </Position13>
+      <Position14>
+        <Filename Value="argobjects.pas"/>
+        <Caret Line="8" Column="20" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="9" Column="51" TopLine="1"/>
+      </Position15>
+      <Position16>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="222" Column="13" TopLine="208"/>
+      </Position16>
+      <Position17>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="9" Column="84" TopLine="1"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\sharedunits\utils\miscutils.pas"/>
+        <Caret Line="8" Column="51" TopLine="1"/>
+      </Position18>
+      <Position19>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="296" Column="40" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="293" Column="9" TopLine="278"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\sharedunits\utils\miscutils.pas"/>
+        <Caret Line="4" Column="1" TopLine="1"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\sharedunits\utils\miscutils.pas"/>
+        <Caret Line="18" Column="17" TopLine="2"/>
+      </Position22>
+      <Position23>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="10" Column="25" TopLine="1"/>
+      </Position23>
+      <Position24>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="386" Column="16" TopLine="372"/>
+      </Position24>
+      <Position25>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="392" Column="15" TopLine="378"/>
+      </Position25>
+      <Position26>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="394" Column="12" TopLine="380"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\sharedunits\utils\stringutils.pas"/>
+        <Caret Line="67" Column="43" TopLine="43"/>
+      </Position27>
+      <Position28>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="394" Column="40" TopLine="380"/>
+      </Position28>
+      <Position29>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="426" Column="24" TopLine="407"/>
+      </Position29>
+      <Position30>
+        <Filename Value="argmain.pas"/>
+        <Caret Line="413" Column="15" TopLine="399"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\sharedunits\general;..\sharedunits\utils"/>
+      <SrcPath Value="..\..\GPUnits"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

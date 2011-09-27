@@ -1,0 +1,172 @@
+object MainForm: TMainForm
+  Left = 0
+  Height = 665
+  Top = 0
+  Width = 1300
+  ActiveControl = PageControl1
+  Caption = 'Argument'
+  ClientHeight = 641
+  ClientWidth = 1300
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -12
+  Font.Name = 'Arial Narrow'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnResize = FormResize
+  LCLVersion = '0.9.31'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 632
+    Top = 0
+    Width = 1294
+    ActivePage = DiagramTs
+    TabIndex = 1
+    TabOrder = 0
+    object TextsTs: TTabSheet
+      Caption = 'Texto'
+      ClientHeight = 603
+      ClientWidth = 1286
+      object TextMm: TMemo
+        Left = 14
+        Height = 90
+        Top = 16
+        Width = 150
+        OnKeyPress = TextMmKeyPress
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+      end
+      object StatementsMm: TMemo
+        Left = 174
+        Height = 90
+        Top = 16
+        Width = 150
+        OnKeyPress = TextMmKeyPress
+        TabOrder = 1
+      end
+    end
+    object DiagramTs: TTabSheet
+      Caption = 'Diagrama'
+      ClientHeight = 603
+      ClientWidth = 1286
+      object ObjectsPb: TPaintBox
+        Left = 6
+        Height = 584
+        Top = 10
+        Width = 1281
+        OnDblClick = ObjectsPbDblClick
+        OnMouseDown = ObjectsPbMouseDown
+        OnMouseMove = ObjectsPbMouseMove
+        OnPaint = ObjectsPbPaint
+      end
+      object ObjectPropPnl: TPanel
+        Left = 13
+        Height = 229
+        Top = 83
+        Width = 337
+        Caption = 'ObjectPropPnl'
+        ClientHeight = 229
+        ClientWidth = 337
+        TabOrder = 1
+        Visible = False
+        OnExit = ObjectPropPnlExit
+        object OPNLReasonsLbl: TLabel
+          Left = 1
+          Height = 17
+          Top = 61
+          Width = 38
+          Caption = 'Reasons'
+          ParentColor = False
+        end
+        object OPNLObjectionsLbl: TLabel
+          Left = 11
+          Height = 17
+          Top = 121
+          Width = 45
+          Caption = 'Objections'
+          ParentColor = False
+        end
+        object ObjectTextMm: TMemo
+          Left = 9
+          Height = 50
+          Top = 5
+          Width = 150
+          Lines.Strings = (
+            'Memo1'
+          )
+          OnKeyDown = ObjectTextMmKeyDown
+          TabOrder = 0
+        end
+        object ObjectObjectionsMm: TMemo
+          Left = 16
+          Height = 52
+          Top = 73
+          Width = 137
+          Lines.Strings = (
+            'Memo1'
+          )
+          OnKeyDown = ObjectTextMmKeyDown
+          TabOrder = 1
+        end
+      end
+      object KeyEd: TEdit
+        Left = 28
+        Height = 24
+        Top = 21
+        Width = 80
+        OnKeyDown = KeyEdKeyDown
+        OnKeyPress = KeyEdKeyPress
+        TabOrder = 0
+        Text = 'KeyEd'
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 198
+    top = 11
+    object FileMi: TMenuItem
+      Caption = 'Ficheiro'
+      object OpenMi: TMenuItem
+        Caption = 'Abrir'
+        OnClick = Open1Click
+      end
+      object SaveMi: TMenuItem
+        Caption = 'Gravar'
+        OnClick = Save1Click
+      end
+      object ClearMi: TMenuItem
+        Caption = 'Novo'
+        OnClick = ClearObjects
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Opções'
+      object SmallFontMi: TMenuItem
+        Caption = 'Fonte Pequena'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = LargeFont1Click
+      end
+      object LargeFontMi: TMenuItem
+        Caption = 'Fonte Grande'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = LargeFont1Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Ajuda'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 185
+    top = 10
+  end
+  object SaveDialog1: TSaveDialog
+    Width = 441
+    Height = 455
+    left = 231
+    top = 15
+  end
+end
